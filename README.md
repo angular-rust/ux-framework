@@ -28,7 +28,7 @@
 
 The **UX Framework** is the primary starting point for developing apps using [UX Components](https://github.com/angular-rust/ux-components) and Angular Rust. Actually, the purpose of this library is to shorten the access path for components, stabilize Angular Rust dependencies, and provide the ability to fine-tune the functionality you need to develop your application. 
 
-**Angular Rust** is a high productivity, `platform-agnostic` frontend framework for the [Rust language](https://www.rust-lang.org/). It now supports desktop and web development. Angular Rust currently uses GTK for desktop development and WebAssembly for web development. We are planning to add support for mobile development.
+**Angular Rust** is a high productivity, `platform-agnostic` frontend framework for the [Rust language](https://www.rust-lang.org/). It now supports desktop and web development. Angular Rust currently uses Clutter for desktop development and WebAssembly for web development. We are planning to add support for mobile development.
 
 ![Angular Rust structure](https://dudochkin-victor.github.io/assets/angular-rust/structure.svg)
 
