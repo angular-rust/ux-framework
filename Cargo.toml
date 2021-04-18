@@ -4,6 +4,12 @@ version = "0.1.0"
 authors = ["Victor Dudochkin <dudochkin.victor@gmail.com>"]
 edition = "2018"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "ux"
 
 [dependencies]
+ux-primitives = "0.1"
+ux-animate = "0.1"
+ux-barcode = "0.1"
+ux-charts = "0.1"
+ux-components = "0.1"

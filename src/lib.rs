@@ -1,3 +1,9 @@
+pub mod prelude {
+    pub use components::prelude::*;
+}
+
+pub use components::*;
+
 #[cfg(test)]
 mod tests {
     #[test]
