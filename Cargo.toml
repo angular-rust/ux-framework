@@ -22,12 +22,13 @@ name = "ux"
 features = ["dox"]
 
 [features]
-dox = ["ux-animate/dox", "ux-charts/dox", "ux-dx/dox", "ux-components/dox", "gobject-sys/dox", "pango/dox"]
+dox = ["ux-animate/dox", "ux-charts/dox", "ux-dx/dox", "ux-components/dox"]
 # , "x11/dox"
+# "gobject-sys/dox", "pango/dox"
 
 [dependencies]
-log = "0.4"
-bitflags = "1.0"
+# log = "0.4"
+# bitflags = "1.0"
 ruex = "0.1.1"
 ux-macro = "0.1.0"
 ux-primitives = "0.1.4"
@@ -37,51 +38,50 @@ ux-animate = "0.1.5"
 ux-charts = "0.1.3"
 # ux-barcode = "0.1"
 ux-components = "0.1.2"
+# simplecss = "0.2.0"
 
-simplecss = "0.2"
+# [target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+# # gobject-sys = "0.10"
+# # glib = "0.10"
+# # pango = "0.9"
+# # x11 = "2.18"
 
-[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
-gobject-sys = "0.10"
-glib = "0.10"
-pango = "0.9"
-# x11 = "2.18"
+# # starup notifications
+# notify-rust = "4"
 
-# starup notifications
-notify-rust = "4"
+# [target.'cfg(target_arch = "wasm32")'.dependencies]
+# wasm-bindgen = "0.2"
+# js-sys = "0.3"
+# wasm-bindgen-futures = "0.4"
+# wasm-logger = "0.2"
+# gloo = "0.2"
+# wasm-bindgen-test = "0.3"
 
-[target.'cfg(target_arch = "wasm32")'.dependencies]
-wasm-bindgen = "0.2"
-js-sys = "0.3"
-wasm-bindgen-futures = "0.4"
-wasm-logger = "0.2"
-gloo = "0.2"
-wasm-bindgen-test = "0.3"
+# [target.'cfg(target_arch = "wasm32")'.dependencies.web-sys]
+# version = "0.3"
+# features = [
+#   'KeyboardEvent',
+#   "ValidityState",
+#   "CustomEvent",
+#   "Node",
+#   "Element",
+#   "HtmlElement",
+#   "Window",
+#   "Document",
+#   "CanvasRenderingContext2d",
+#   "TextMetrics",
+#   "HtmlCanvasElement",
+#   "HtmlImageElement",
+#   "SvgImageElement",
+#   "HtmlVideoElement",
+#   "ImageBitmap",
+#   "CanvasWindingRule",
+#   "Path2d",
+#   "CanvasPattern",
+#   "CanvasGradient",
+#   "HitRegionOptions",
+#   "ImageData",
+#   "DomMatrix"
+# ]
 
-[target.'cfg(target_arch = "wasm32")'.dependencies.web-sys]
-version = "0.3"
-features = [
-  'KeyboardEvent',
-  "ValidityState",
-  "CustomEvent",
-  "Node",
-  "Element",
-  "HtmlElement",
-  "Window",
-  "Document",
-  "CanvasRenderingContext2d",
-  "TextMetrics",
-  "HtmlCanvasElement",
-  "HtmlImageElement",
-  "SvgImageElement",
-  "HtmlVideoElement",
-  "ImageBitmap",
-  "CanvasWindingRule",
-  "Path2d",
-  "CanvasPattern",
-  "CanvasGradient",
-  "HitRegionOptions",
-  "ImageData",
-  "DomMatrix"
-]
-
-[dev-dependencies]
+# [dev-dependencies]
